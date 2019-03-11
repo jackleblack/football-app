@@ -3,7 +3,7 @@ export class MessengerDb {
 		{
 			id: 1,
 			type: 'in',
-			pic: './assets/app/media/img//users/user3.jpg',
+			pic: './assets/app/media/img/users/user3.jpg',
 			username: 'Megan wrote',
 			text: 'Hi Bob. What time will be the meeting ?'
 		},
@@ -15,7 +15,7 @@ export class MessengerDb {
 		{
 			id: 3,
 			type: 'in',
-			pic: './assets/app/media/img//users/user3.jpg',
+			pic: './assets/app/media/img/users/user3.jpg',
 			username: 'Megan wrote',
 			text: 'Will the development team be joining ?'
 		},
@@ -32,7 +32,7 @@ export class MessengerDb {
 		{
 			id: 6,
 			type: 'in',
-			pic: './assets/app/media/img//users/user3.jpg',
+			pic: './assets/app/media/img/users/user3.jpg',
 			username: 'Megan wrote',
 			text: 'Noted. For the Coca-Cola Mobile App project as well ?'
 		},
@@ -67,7 +67,7 @@ export class MessengerDb {
 		{
 			id: 12,
 			type: 'in',
-			pic: './assets/app/media/img//users/user3.jpg',
+			pic: './assets/app/media/img/users/user3.jpg',
 			username: 'Megan wrote',
 			text: 'Sure. See you in the meeting soon.'
 		}

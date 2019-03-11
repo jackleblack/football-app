@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "football-app",
+    "name": "tifosi",
     "builds": [
       {
         "src": "package.json",
@@ -21,7 +21,8 @@
       {
         "src": "/(.*)",
         "headers": { "cache-control": "public,max-age=0,must-revalidate" },
-        "dest": "/index.html"
+        "dest": "/*1"
       }
-    ]
+    ],
+    "alias": ["tifosi"]
   }
