@@ -28,7 +28,7 @@ import { ClassInitService } from './core/services/class-init.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
-import { GestureConfig, MatProgressSpinnerModule } from '@angular/material';
+import { GestureConfig, MatProgressSpinnerModule  } from '@angular/material';
 import { OverlayModule } from '@angular/cdk/overlay';
 
 import { MessengerService } from './core/services/messenger.service';
@@ -67,8 +67,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 		NgxPermissionsModule.forRoot(),
 		NgbModule.forRoot(),
 		TranslateModule.forRoot(),
-		MatProgressSpinnerModule,
-	],
+		MatProgressSpinnerModule
+		],
 	providers: [
 		AclService,
 		LayoutConfigService,

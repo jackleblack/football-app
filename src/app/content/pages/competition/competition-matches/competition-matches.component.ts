@@ -17,7 +17,7 @@ export class CompetitionMatchesComponent implements OnInit {
 
   ngOnInit() {
     this.getCompetitionMatches();
-    console.log(this.competitionMatches);
+    // console.log(this.competitionMatches);
   }
 
   getCompetitionMatches(): void {

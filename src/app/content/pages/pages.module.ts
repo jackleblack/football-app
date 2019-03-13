@@ -1,5 +1,6 @@
 import { LayoutModule } from '../layout/layout.module';
 import { NgModule } from '@angular/core';
+import { MatTabsModule  } from '@angular/material';
 import { CommonModule } from '@angular/common';
 import { PagesRoutingModule } from './pages-routing.module';
 import { PagesComponent } from './pages.component';
@@ -38,6 +39,7 @@ import { CompetitionStandingsComponent } from './competition/competition-standin
 		LayoutModule,
 		PartialsModule,
 		AngularEditorModule,
+		MatTabsModule
 	],
 	providers: []
 })

@@ -1,6 +1,22 @@
 <h2>My Standings</h2>
-<ul class="standings">
-  <li *ngFor="let standing of competitionStandings.standings.table"
-    <span class="badge">{{standing.position}}</span> {{standing.team.name}}
-  </li>
-</ul>
+<!-- <div *ngFor="let standingType of competitionStandings.standings">
+  <h3>{{standingType.type}}</h3>
+  <ul class="standings">
+    <li *ngFor="let standing of standingType.table">
+      <span class="badge">{{standing.position}}</span> {{standing.team.name}}
+    </li>
+  </ul>
+</div> -->
+<mat-tab-group >
+  <mat-tab *ngFor="let standingType of competitionStandings.standings"
+    label="{{standingType.type}}">
+    <ng-template>
+      <div>{{standingType.type}}</div>
+    </ng-template>
+    <ul class="standings">
+      <li *ngFor="let standing of standingType.table">
+        <span class="badge">{{standing.position}}</span> {{standing.team.name}}
+      </li>
+    </ul>
+  </mat-tab>
+</mat-tab-group>
