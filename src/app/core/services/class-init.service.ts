@@ -152,6 +152,7 @@ export class ClassInitService {
 	}
 
 	initAsideLeft(): void {
+		console.log(objectPath.get(this.config, 'aside.left.display'));
 		// if aside left display is disabled, do exit
 		if (!objectPath.get(this.config, 'aside.left.display')) {
 			return;

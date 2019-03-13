@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorPageComponent } from './snippets/error-page/error-page.component';
 import { InnerComponent } from './components/inner/inner.component';
+import { CompetitionComponent } from './competition/competition.component';
 
 @NgModule({
 	declarations: [
@@ -20,6 +21,7 @@ import { InnerComponent } from './components/inner/inner.component';
 		ProfileComponent,
 		ErrorPageComponent,
 		InnerComponent,
+		CompetitionComponent,
 	],
 	imports: [
 		CommonModule,

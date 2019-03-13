@@ -11,6 +11,12 @@ export class PagesConfig implements ConfigModel {
 					desc: 'Latest updates and statistic charts'
 				}
 			},
+			'competitions': {
+				page: {
+					title: 'Competitions',
+					desc: 'Latest updates and statistic competitions'
+				}
+			},
 			builder: {
 				page: { title: 'Layout Builder', desc: 'Layout builder' }
 			},

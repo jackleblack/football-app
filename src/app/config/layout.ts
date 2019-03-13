@@ -56,7 +56,7 @@ export class LayoutConfig implements ConfigModel {
 		aside: {
 			// Left aside(used for left aside menu)
 			left: {
-				display: true, //  Display or hide  left aside
+				display: false, //  Display or hide  left aside
 				fixed: false, //  Set fixed left aside mode
 				skin: 'light', //  Select left aside skin from available options:  light|dark
 				push_footer: true, //  Pull left aside to the bottom and push the footer to the right
@@ -100,7 +100,7 @@ export class LayoutConfig implements ConfigModel {
 			// Left aside menu
 			aside: {
 				// Display or hide header menu
-				display: true,
+				display: false,
 
 				// left aside menu desktop and mobile modes
 				desktop_and_mobile: {

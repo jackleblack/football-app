@@ -7,10 +7,11 @@ export const locale = {
 		},
 		MENU: {
 			NEW: 'new',
-			ACTIONS: 'Actions',
-			CREATE_POST: 'Create New Post',
-			REPORTS: 'Reports',
-			APPS: 'Apps',
+			LIGUE1: 'Ligue 1',
+			LIGA: 'Liga',
+			SERIEA: 'Serie A',
+			PREMIER_LEAGUE: 'Premier league',
+			BUNDESLIGA: 'Bundesliga',
 			DASHBOARD: 'Dashboard'
 		},
 		AUTH: {
