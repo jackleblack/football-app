@@ -3,7 +3,7 @@ import * as objectPath from 'object-path';
 import { LayoutConfigService } from '../../../core/services/layout-config.service';
 
 @Component({
-  selector: 'm-competition',
+  selector: 'competition',
   templateUrl: './competition.component.html',
   styleUrls: ['./competition.component.scss']
 })

@@ -13,6 +13,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { ErrorPageComponent } from './snippets/error-page/error-page.component';
 import { InnerComponent } from './components/inner/inner.component';
 import { CompetitionComponent } from './competition/competition.component';
+import { CompetitionTeamsComponent } from './competition/competition-teams/competition-teams.component';
+import { CompetitionMatchesComponent } from './competition/competition-matches/competition-matches.component';
+import { CompetitionStandingsComponent } from './competition/competition-standings/competition-standings.component';
 
 @NgModule({
 	declarations: [
@@ -22,6 +25,9 @@ import { CompetitionComponent } from './competition/competition.component';
 		ErrorPageComponent,
 		InnerComponent,
 		CompetitionComponent,
+		CompetitionTeamsComponent,
+		CompetitionMatchesComponent,
+		CompetitionStandingsComponent,
 	],
 	imports: [
 		CommonModule,
