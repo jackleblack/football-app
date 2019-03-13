@@ -1,3 +1,6 @@
-<p>
-  competition-standings works!
-</p>
+<h2>My Standings</h2>
+<ul class="standings">
+  <li *ngFor="let standing of competitionStandings.standings.table"
+    <span class="badge">{{standing.position}}</span> {{standing.team.name}}
+  </li>
+</ul>
