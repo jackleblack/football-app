@@ -47,12 +47,17 @@ import { LayoutRefService } from './core/services/layout/layout-ref.service';
 import { SplashScreenService } from './core/services/splash-screen.service';
 import { DataTableService } from './core/services/datatable.service';
 
+import { TruncatePipe } from './core/pipes/truncate.pipe';
+
+
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 	// suppressScrollX: true
 };
 
 @NgModule({
-	declarations: [AppComponent],
+	declarations: [AppComponent,
+	    TruncatePipe
+],
 	imports: [
 		BrowserAnimationsModule,
 		BrowserModule,

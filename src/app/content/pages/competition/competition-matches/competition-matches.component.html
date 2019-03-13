@@ -9,13 +9,7 @@
     </div>
   </div>
   <div class="m-portlet__body">
-    <!-- <mat-tab-group>
-        <mat-tab *ngFor="let standingType of competitionStandings.standings" label="{{standingType.type}}">
-          <ng-template>
-            <div>{{standingType.type}}</div>
-          </ng-template> -->
-    <!--begin:: Widgets/Authors Profit-->
-    <table>
+    <!-- <table>
       <thead>
         <th>Time</th>
         <th>Home</th>
@@ -30,7 +24,29 @@
           <td>{{ match.awayTeam.name}}</td>
         </tr>
       </tbody>
-    </table>
+    </table> -->
+
+    <div class="matches">
+      <div class=" row" *ngFor="let match of competitionMatches.matches">
+        <span class="col-2">
+          {{ match.utcDate | date:'MM/dd/yyyy'}}
+        </span>
+        <div class="col-4">
+          <span>
+            {{ match.homeTeam.name }}
+          </span>
+        </div>
+        <div class="col-2">
+          <span class="score m--font-brand">
+            {{ match.score.fullTime.homeTeam}} - {{ match.score.fullTime.awayTeam}}</span>
+        </div>
+        <div class="col-4">
+          <span>
+            {{ match.awayTeam.name}}
+          </span>
+        </div>
+      </div>
+    </div>
 
     <!--end:: Widgets/Authors Profit-->
     <!-- </mat-tab>
