@@ -1,3 +1,38 @@
-<p>
-  competition-matches works!
-</p>
+<div class="m-portlet">
+  <div class="m-portlet__head">
+    <div class="m-portlet__head-caption">
+      <div class="m-portlet__head-title">
+        <h3 class="m-portlet__head-text">
+          Matches
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="m-portlet__body">
+    <!-- <mat-tab-group>
+        <mat-tab *ngFor="let standingType of competitionStandings.standings" label="{{standingType.type}}">
+          <ng-template>
+            <div>{{standingType.type}}</div>
+          </ng-template> -->
+    <!--begin:: Widgets/Authors Profit-->
+    <table>
+      <thead>
+        <th>Time</th>
+        <th>Home</th>
+        <th>Score</th>
+        <th>Away</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let match of competitionMatches.matches">
+          <td>{{ match.utcDate | date}}</td>
+          <td>{{ match.homeTeam.name}}</td>
+          <td>{{ match.score.fullTime.awayTeam}} - {{ match.score.fullTime.awayTeam }}</td>
+          <td>{{ match.awayTeam.name}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!--end:: Widgets/Authors Profit-->
+    <!-- </mat-tab>
+      </mat-tab-group> -->
+  </div>

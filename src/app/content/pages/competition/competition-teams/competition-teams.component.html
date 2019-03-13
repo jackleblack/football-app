@@ -1,8 +1,17 @@
-<h2>My Teams</h2>
-<ul class="teams">
-  <li *ngFor="let team of competitionTeams.teams"
-    [class.selected]="team === selectedTeam"
-    (click)="onSelect(team)">
-    <span class="badge">{{team.id}}</span> {{team.name}}
-  </li>
-</ul>
+<div class="m-portlet">
+  <div class="m-portlet__head">
+    <div class="m-portlet__head-caption">
+      <div class="m-portlet__head-title">
+        <h3 class="m-portlet__head-text">
+          Team
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="m-portlet__body ">
+    <div class="teams">
+      <img *ngFor="let team of competitionTeams.teams" [class.selected]="team === selectedTeam" class="avatar" (click)="onSelect(team)"
+        src="{{ team.crestUrl}}" alt="Avatar" />
+    </div>
+  </div>
+</div>

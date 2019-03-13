@@ -19,22 +19,15 @@ export class CompetitionService {
 
   constructor() { }
 
-  // getCompetition(): Observable<Competition> {
-  //   return of(HEROES);
-  // }
-
   getCompetitionTeams(): Observable<CompetitionTeams> {
-    // TODO: send the message _after_ fetching the heroes
     return of(COMPETITION_TEAMS);
   }
 
   getCompetitionStandings(): Observable<CompetitionStandings> {
-    // TODO: send the message _after_ fetching the heroes
     return of(COMPETITION_STANDINGS);
   }
 
   getCompetitionMatches(): Observable<CompetitionMatches> {
-    // TODO: send the message _after_ fetching the heroes
     return of(COMPETITION_MATCHES);
   }
 }
